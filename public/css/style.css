@@ -1,0 +1,80 @@
+li { list-style-type: none; }
+a { text-decoration: none; }
+
+.clear { clear: both; }
+.clear-10 { clear: both; height: 10px; }
+.clear-80 { clear: both; height: 80px; } 
+
+.text-decoration { text-decoration: line-through; }
+
+@media screen and (max-width: 768px){
+    .content-wrap {
+        position: relative;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+        width:calc(100% + 240px);
+    }
+    .content-wrap-left {
+        left: -240px;
+    }
+    .content-wrap-left.on {
+        left: 0px;
+    }
+    .content-sidebar {
+        position: absolute;
+        top: 0;
+    }
+}
+.navigation { position: relative; }
+.box { margin-top: 10px; margin-bottom: 10px; }
+.box .box-inner { border: 1px solid #dedede; border-radius: 3px; }
+.box .box-header { padding-left: 10px; height: 35px; border:none; border-bottom: 1px solid #dedede; border-radius: 3px 3px 0px 0px; background: linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(0,0,0,0.1) 100%); }
+.box .box-header h5 { float: left; }
+.box .box-header h5 i { margin-right: 5px; }
+.box .box-header .box-icon { float: right; line-height: 35px; }
+.box .box-header .box-icon i { margin: 0px 15px 0px 0px; }
+.box .box-content { padding: 10px;}
+.box .box-content ul.owner-list { margin: 0; overflow: hidden; padding-left: 10px; }
+.box .box-content ul.owner-list .owner-avatar { border-radius: 50%; border: 1px solid #EBEBEB; width: 50px; height: 50px; }
+.box .box-content ul.owner-list img { float: left ;}
+.box .box-content ul.owner-list li { overflow: hidden; padding: 7px 0; list-style: none; border-bottom: 1px solid #ebebeb; border-top: 1px solid #fff; }
+.box .box-content ul.owner-list .owner-info { float: left; margin-left: 20px; }
+.content-wrap { overflow: hidden; }
+.content-sidebar { position: relative; padding-top: 10px; width: inherit; min-width: 220px; max-width: 220px; float: left; }
+.content-sidebar .sidebar-nav { padding-bottom: 10px; border: 1px solid #BDBDBD; box-shadow: 0 0 10px #BDBDBD; border-radius: 5px; }
+.content-sidebar .sidebar-nav li a { text-align: center; border: 1px solid rgba(221,221,221,0.46); border-radius: 4px;}
+.content-sidebar .sidebar-title { text-align: center; font-size: 11px; font-weight: bold; color: #999999; text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
+.content-sidebar .sidebar-menu li a > i { margin-right: 3px; }
+.content-body { position: relative; height: 100%; overflow: auto; }
+#login-window { 
+    position: relative;
+    background-color: #ededed; 
+    height: 200px; 
+    width: 100%;
+    color: #fff; 
+    text-align: center;
+    display: none; 
+}
+#login-window .login-content { width: 200px; height: 200px; margin: 0 auto; padding-top: 30px; }
+#login-window .login-content form { margin: 0 auto; }
+#login-window .login-content form > a { float: left; margin: 3px 0px 3px 0px; }
+#login-window .login-content .form-signin { padding: 10px; }
+#login-window .login-content .form-signin input:nth-child(2){
+    margin-bottom: 10px;
+}
+/*#login-window .login-content .form-signin > label { padding: 0;}*/
+#id-input { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+#password-input { border-top-right-radius: 0; border-top-left-radius: 0; }
+#device-login-window-btn { margin: 0 auto; float: left; text-align: center; height: 50px; line-height: 50px; font-size: 20px; }
+/*#login-window.on { display: block; }*/
+ul.secondary-menu li > a { padding: 0; height: 32px; background-color: #ededed; line-height: 32px; }
+.nav-stacked >li + li { margin-top: 0px; }
+
+#tabs-content .tabs-content-list { display: none; }
+#tabs-content .tabs-content-list .new { height: 40px; position: relative; padding: 5px; line-height: 30px; }
+#tabs-content .tabs-content-list .new a { text-decoration: none; font-size: 14px; font-weight: bold; }
+#tabs-content .tabs-content-list .new label { float: right; }
+#tabs-content .tabs-content-list.active { display: block; }
+.resident-info .box-content button { float: right; }
+.dataTables_wrapper .dataTables_paginate .paginate_button { margin-left: 0px; padding: 0;}
